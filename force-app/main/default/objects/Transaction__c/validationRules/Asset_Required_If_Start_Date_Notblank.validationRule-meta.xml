@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Required_If_Start_Date_Notblank</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT (ISBLANK( Start_Date__c  )) &amp;&amp;  ISBLANK( Asset__r.Id )</errorConditionFormula>
+    <errorDisplayField>Asset__c</errorDisplayField>
+    <errorMessage>Asset should be required when date is started</errorMessage>
+</ValidationRule>
